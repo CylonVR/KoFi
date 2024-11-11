@@ -1,6 +1,6 @@
 // Created by Spokeek and edit by Ranily
 const EVENT_RAW = process.env.EVENT_RAW;
-const FILE_PATH = process.env.FILE_PATH || "./KoFi.txt"
+const FILE_PATH = process.env.FILE_PATH || "./vrchat-kofi-users.txt"
 
 const fs = require('fs')
 
