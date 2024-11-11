@@ -18,7 +18,7 @@ try {
         console.log("Type Subscription")
     }
     else {
-        amount = event_json.amount +
+        amount = event_json.amount + ""
         console.log("Type Donation")
     }
     
