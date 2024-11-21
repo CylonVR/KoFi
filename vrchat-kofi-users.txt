@@ -1,6 +1,7 @@
-Tom_Phoenix : 60.00€/mois
-Gale : 6.00$
-Tom : 6.00/
- : undefined
-Jo Example : 3.00
-Fre : 3.00
+T : o : m : _ : P : h : o : e : n : i : x :  : : :  : 6 : 0 : . : 0 : 0 : € : / : m : o : i : s
+G : a : l : e :  : : :  : 6 : . : 0 : 0 : $
+T : o : m :  : : :  : 6 : . : 0 : 0 : /
+ : : :  : u : n : d : e : f : i : n : e : d
+J : o :  : E : x : a : m : p : l : e :  : : :  : 3 : . : 0 : 0
+F : r : e :  : : :  : 3 : . : 0 : 0
+no : 3.00
