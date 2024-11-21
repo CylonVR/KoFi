@@ -1,2 +1,3 @@
 Jo Example : 5.00€/mois
 Hactazia : 0€
+Baby : 1€
