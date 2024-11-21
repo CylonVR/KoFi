@@ -1,0 +1,16 @@
+name: Copy Issue Body to Text File
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  copy-body:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Copy issue body to file
+        run: |
+          echo "${{ github.event.issue.body }}" > issue_body.txt
