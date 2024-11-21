@@ -14,11 +14,9 @@ try {
     let amount = event_json.amount;
 
     if(type == "Subscription") {
-        amount = event_json.amount + ""
         console.log("Type Subscription")
     }
     else {
-        amount = event_json.amount + ""
         console.log("Type Donation")
     }
     
