@@ -12,15 +12,6 @@ try {
     const userArray = users.toString().split("\n").filter(n => n.trim().length).map((line) => line.split(":").map((item) => item.trim()));
     const type = event_json.type;
     let amount = event_json.amount;
-
-    if(type == "Subscription") {
-        amount = event_json.amount + "€/mois"
-        console.log("Type Subscription")
-    }
-    else {
-        amount = event_json.amount + "€"
-        console.log("Type Donation")
-    }
     
     if(!userArray.find(line => line[0] === event_json.name)) {
         userArray.push([event_json.name, amount])
