@@ -33,7 +33,7 @@ try {
     }
     console.log(userArray)
 
-    const textRaw = userArray.map((line) => line.join(" : ")).join("\n")
+    const textRaw = userArray.map((line) =>
     fs.writeFileSync(FILE_PATH, textRaw, { encoding: "utf8" })
     console.log("file written")
 }
