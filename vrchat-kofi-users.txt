@@ -3,3 +3,4 @@ Gale : 6.00$
 Tom : 6.00/
  : undefined
 Jo Example : 3.00
+Fre : 3.00
