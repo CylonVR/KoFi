@@ -1,3 +1,4 @@
 Tom_Phoenix : 60.00€/mois
 Gale : 6.00$
 Tom : 6.00/
+ : undefined
