@@ -9,7 +9,7 @@ try {
     console.log(event_json)
 
     const users = fs.readFileSync(FILE_PATH, {encoding: "utf8"});
-    const userArray = users.toString().split("\n").filter(n => n.trim().length).map((line) => line.split("").map((item) => item.trim()));
+    const userArray = users.toString().split("\n").filter(n => n.trim().length).map((line) => line.split(" ").map((item) => item.trim()));
     const type = event_json.type;
     let amount = event_json.amount;
 
@@ -31,7 +31,7 @@ try {
     }
     console.log(userArray)
 
-    const textRaw = userArray.map((line) => line.join("")).join("\n")
+    const textRaw = userArray.map((line) => line.join(" ")).join("\n")
     fs.writeFileSync(FILE_PATH, textRaw, { encoding: "utf8" })
     console.log("file written")
 }
