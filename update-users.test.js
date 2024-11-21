@@ -8,35 +8,35 @@ const SCRIPT_PATH = "./update-users.js"
 
 const TEST_DATA_FILE = "./test-data.txt"
 
-// User test 1 make a 3€ donation
+// User test 1 make a 3$ donation
 const EVENT_1 = {
     "name": "user_test_1",
     "amount": "3",
     "type": "Donation"
 }
 const EXPECT_EVENT_1 = [
-    ["user_test_1", "3€"]
+    ["user_test_1", "3$"]
 ]
 
-// User test 1 updates and make a 5€ donation
+// User test 1 updates and make a 5$ donation
 const EVENT_2 = {
     "name": "user_test_1",
     "amount": "5",
     "type": "Donation"
 }
 const EXPECT_EVENT_2 = [
-    ["user_test_1", "5€"]
+    ["user_test_1", "5$"]
 ]
 
-// A new user makes a 10€ subscription
+// A new user makes a 10$ subscription
 const EVENT_3 = {
     "name": "user_test_2",
     "amount": "10",
     "type": "Subscription"
 }
 const EXPECT_EVENT_3 = [
-    ["user_test_1", "5€"],
-    ["user_test_2", "10€/mois"]
+    ["user_test_1", "5$"],
+    ["user_test_2", "10$/month"]
 ]
 
 // Events to play
