@@ -62,7 +62,7 @@ for (group of EVENTS) {
     const env = { "EVENT_RAW": JSON.stringify(event), "FILE_PATH": TEST_DATA_FILE };
     process.stdout.write(execSync(`node ${SCRIPT_PATH}`, { env }).toString())
     const users = fs.readFileSync(TEST_DATA_FILE, { encoding: "utf8" });
-    const expectRaw = expect.map((line) =>
+    const expectRaw = expect.map((line) => line.join(" : ")).join("\n")
     if (expectRaw !== users) {
         console.error("event " + groupIndex + " failed")
         console.error("expected:")
