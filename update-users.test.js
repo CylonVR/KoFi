@@ -10,9 +10,9 @@ const TEST_DATA_FILE = "./test-data.txt"
 
 // User test 1 make a 3$ donation
 const EVENT_1 = {
-    "name" "user_test_1",
-    "amount" "3",
-    "type" "Donation"
+    "name": "user_test_1",
+    "amount": "3",
+    "type": "Donation"
 }
 const EXPECT_EVENT_1 = [
     ["user_test_1", "3$"]
@@ -20,9 +20,9 @@ const EXPECT_EVENT_1 = [
 
 // User test 1 updates and make a 5$ donation
 const EVENT_2 = {
-    "name" "user_test_1",
-    "amount" "5",
-    "type" "Donation"
+    "name": "user_test_1",
+    "amount": "5",
+    "type": "Donation"
 }
 const EXPECT_EVENT_2 = [
     ["user_test_1", "5$"]
@@ -30,9 +30,9 @@ const EXPECT_EVENT_2 = [
 
 // A new user makes a 10$ subscription
 const EVENT_3 = {
-    "name" "user_test_2",
-    "amount" "10",
-    "type" "Subscription"
+    "name": "user_test_2",
+    "amount": "10",
+    "type": "Subscription"
 }
 const EXPECT_EVENT_3 = [
     ["user_test_1", "5$"],
@@ -62,7 +62,7 @@ for (group of EVENTS) {
     const env = { "EVENT_RAW": JSON.stringify(event), "FILE_PATH": TEST_DATA_FILE };
     process.stdout.write(execSync(`node ${SCRIPT_PATH}`, { env }).toString())
     const users = fs.readFileSync(TEST_DATA_FILE, { encoding: "utf8" });
-    const expectRaw = expect.map((line) => line.join("  ")).join("\n")
+    const expectRaw = expect.map((line) => line.join(" : ")).join("\n")
     if (expectRaw !== users) {
         console.error("event " + groupIndex + " failed")
         console.error("expected:")
