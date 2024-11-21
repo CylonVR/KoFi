@@ -14,12 +14,11 @@ try {
     let amount = event_json.amount;
     
     if(!userArray.find(line => line[0] === event_json.name)) {
-        userArray.push([event_json.name, amount])
+        userArray.push([event_json.name]
         console.log("user added")
     }
     else {
         const index = userArray.findIndex(line => line[0] === event_json.name)
-        userArray[index][1] = amount
         console.log("updated existing user")
     }
     console.log(userArray)
