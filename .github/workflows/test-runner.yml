@@ -17,4 +17,4 @@ jobs:
           uses: actions/checkout@v2
 
         - name: Run test
-          run: node update-users.test.js
+          run: node update-users.js
