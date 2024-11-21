@@ -14,7 +14,7 @@ try {
     let amount = event_json.amount;
 
     if(type == "Subscription") {
-        amount = event_json.amount + "$"
+        amount = event_json.amount + "$/month"
         console.log("Type Subscription")
     }
     else {
